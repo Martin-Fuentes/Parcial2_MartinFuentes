@@ -60,10 +60,40 @@
     <Folder Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="AgregarAuto.Designer.vb">
+      <DependentUpon>AgregarAuto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="AgregarAuto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCompra.Designer.vb">
+      <DependentUpon>AgregarCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra.Designer.vb">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmarCompra.Designer.vb">
+      <DependentUpon>ConfirmarCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmarCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCuenta.Designer.vb">
+      <DependentUpon>CrearCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iniciosesion.Designer.vb">
+      <DependentUpon>Iniciosesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Iniciosesion.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -71,6 +101,35 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Conexion\Conexion.vbproj">
+      <Project>{2a22a411-4a8b-44dd-9d88-1ac7a3fd38a0}</Project>
+      <Name>Conexion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AgregarAuto.resx">
+      <DependentUpon>AgregarAuto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCompra.resx">
+      <DependentUpon>AgregarCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmarCompra.resx">
+      <DependentUpon>ConfirmarCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearCuenta.resx">
+      <DependentUpon>CrearCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iniciosesion.resx">
+      <DependentUpon>Iniciosesion.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
