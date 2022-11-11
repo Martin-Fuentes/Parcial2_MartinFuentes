@@ -22,32 +22,32 @@ Partial Class CrearCuenta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCrearCuenta = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtNom = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtUsu = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtCed = New System.Windows.Forms.TextBox()
+        Me.txtContra = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtTel = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.enlInicio = New System.Windows.Forms.Label()
+        Me.txtDir = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnCrearCuenta
         '
-        Me.Button1.Location = New System.Drawing.Point(504, 312)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 36)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCrearCuenta.Location = New System.Drawing.Point(504, 312)
+        Me.btnCrearCuenta.Name = "btnCrearCuenta"
+        Me.btnCrearCuenta.Size = New System.Drawing.Size(85, 36)
+        Me.btnCrearCuenta.TabIndex = 0
+        Me.btnCrearCuenta.Text = "Crear Cuenta"
+        Me.btnCrearCuenta.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -58,12 +58,12 @@ Partial Class CrearCuenta
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre Completo"
         '
-        'TextBox1
+        'txtNom
         '
-        Me.TextBox1.Location = New System.Drawing.Point(159, 92)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(242, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txtNom.Location = New System.Drawing.Point(159, 92)
+        Me.txtNom.Name = "txtNom"
+        Me.txtNom.Size = New System.Drawing.Size(242, 20)
+        Me.txtNom.TabIndex = 2
         '
         'Label2
         '
@@ -74,12 +74,12 @@ Partial Class CrearCuenta
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Nombre de usuario"
         '
-        'TextBox2
+        'txtUsu
         '
-        Me.TextBox2.Location = New System.Drawing.Point(159, 151)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(242, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtUsu.Location = New System.Drawing.Point(159, 151)
+        Me.txtUsu.Name = "txtUsu"
+        Me.txtUsu.Size = New System.Drawing.Size(242, 20)
+        Me.txtUsu.TabIndex = 4
         '
         'Label3
         '
@@ -90,19 +90,19 @@ Partial Class CrearCuenta
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Cédula"
         '
-        'TextBox3
+        'txtCed
         '
-        Me.TextBox3.Location = New System.Drawing.Point(159, 210)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(242, 20)
-        Me.TextBox3.TabIndex = 6
+        Me.txtCed.Location = New System.Drawing.Point(159, 210)
+        Me.txtCed.Name = "txtCed"
+        Me.txtCed.Size = New System.Drawing.Size(242, 20)
+        Me.txtCed.TabIndex = 6
         '
-        'TextBox5
+        'txtContra
         '
-        Me.TextBox5.Location = New System.Drawing.Point(159, 390)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(242, 20)
-        Me.TextBox5.TabIndex = 10
+        Me.txtContra.Location = New System.Drawing.Point(159, 390)
+        Me.txtContra.Name = "txtContra"
+        Me.txtContra.Size = New System.Drawing.Size(242, 20)
+        Me.txtContra.TabIndex = 10
         '
         'Label5
         '
@@ -116,18 +116,18 @@ Partial Class CrearCuenta
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(349, 36)
+        Me.Label6.Location = New System.Drawing.Point(332, 46)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(69, 13)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Crear Cuenta"
         '
-        'TextBox4
+        'txtTel
         '
-        Me.TextBox4.Location = New System.Drawing.Point(159, 269)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(242, 20)
-        Me.TextBox4.TabIndex = 13
+        Me.txtTel.Location = New System.Drawing.Point(159, 269)
+        Me.txtTel.Name = "txtTel"
+        Me.txtTel.Size = New System.Drawing.Size(242, 20)
+        Me.txtTel.TabIndex = 13
         '
         'Label4
         '
@@ -147,21 +147,21 @@ Partial Class CrearCuenta
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "¿Ya tienes una cuenta?"
         '
-        'Label8
+        'enlInicio
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(574, 366)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(67, 13)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Inicia Sesión"
+        Me.enlInicio.AutoSize = True
+        Me.enlInicio.Location = New System.Drawing.Point(573, 366)
+        Me.enlInicio.Name = "enlInicio"
+        Me.enlInicio.Size = New System.Drawing.Size(56, 13)
+        Me.enlInicio.TabIndex = 15
+        Me.enlInicio.Text = "Click Aquí"
         '
-        'TextBox6
+        'txtDir
         '
-        Me.TextBox6.Location = New System.Drawing.Point(159, 328)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(242, 20)
-        Me.TextBox6.TabIndex = 17
+        Me.txtDir.Location = New System.Drawing.Point(159, 328)
+        Me.txtDir.Name = "txtDir"
+        Me.txtDir.Size = New System.Drawing.Size(242, 20)
+        Me.txtDir.TabIndex = 17
         '
         'Label9
         '
@@ -177,22 +177,22 @@ Partial Class CrearCuenta
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(685, 562)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.txtDir)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.enlInicio)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtTel)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtContra)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtCed)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtUsu)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtNom)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCrearCuenta)
         Me.Name = "CrearCuenta"
         Me.Text = "CrearCuenta"
         Me.ResumeLayout(False)
@@ -200,20 +200,20 @@ Partial Class CrearCuenta
 
     End Sub
 
-    Friend WithEvents Button1 As Windows.Forms.Button
+    Friend WithEvents btnCrearCuenta As Windows.Forms.Button
     Friend WithEvents Label1 As Windows.Forms.Label
-    Friend WithEvents TextBox1 As Windows.Forms.TextBox
+    Friend WithEvents txtNom As Windows.Forms.TextBox
     Friend WithEvents Label2 As Windows.Forms.Label
-    Friend WithEvents TextBox2 As Windows.Forms.TextBox
+    Friend WithEvents txtUsu As Windows.Forms.TextBox
     Friend WithEvents Label3 As Windows.Forms.Label
-    Friend WithEvents TextBox3 As Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As Windows.Forms.TextBox
+    Friend WithEvents txtCed As Windows.Forms.TextBox
+    Friend WithEvents txtContra As Windows.Forms.TextBox
     Friend WithEvents Label5 As Windows.Forms.Label
     Friend WithEvents Label6 As Windows.Forms.Label
-    Friend WithEvents TextBox4 As Windows.Forms.TextBox
+    Friend WithEvents txtTel As Windows.Forms.TextBox
     Friend WithEvents Label4 As Windows.Forms.Label
     Friend WithEvents Label7 As Windows.Forms.Label
-    Friend WithEvents Label8 As Windows.Forms.Label
-    Friend WithEvents TextBox6 As Windows.Forms.TextBox
+    Friend WithEvents enlInicio As Windows.Forms.Label
+    Friend WithEvents txtDir As Windows.Forms.TextBox
     Friend WithEvents Label9 As Windows.Forms.Label
 End Class

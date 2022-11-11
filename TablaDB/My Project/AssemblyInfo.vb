@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("Conexion")>
+<Assembly: AssemblyTitle("TablaDB")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Conexion")>
+<Assembly: AssemblyProduct("TablaDB")>
 <Assembly: AssemblyCopyright("Copyright ©  2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-<Assembly: Guid("403abe5c-7fdf-4b83-b5fc-87f11a1acd3e")>
+<Assembly: Guid("0998fa45-6bc9-4b76-9da4-3c8a12f4f1b6")>
 
 ' La información de versión de un ensamblado consta de los cuatro valores siguientes:
 '

@@ -49,16 +49,21 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Parcial2_MartinFuentes.Iniciosesion</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="My Project\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="AgregarAuto.Designer.vb">
       <DependentUpon>AgregarAuto.vb</DependentUpon>
@@ -96,16 +101,27 @@
     <Compile Include="Iniciosesion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Conexion\Conexion.vbproj">
-      <Project>{2a22a411-4a8b-44dd-9d88-1ac7a3fd38a0}</Project>
+      <Project>{8d748bde-9d46-41dd-ada7-35081caf5efd}</Project>
       <Name>Conexion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TablaDB\TablaDB.vbproj">
+      <Project>{a527cabc-8d6b-4999-905c-835c76a734c3}</Project>
+      <Name>TablaDB</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +142,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Iniciosesion.resx">
       <DependentUpon>Iniciosesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
