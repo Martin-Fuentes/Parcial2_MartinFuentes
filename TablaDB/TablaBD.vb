@@ -3,6 +3,7 @@ Imports System.Runtime.ConstrainedExecution
 Imports Conexion
 Imports MySql.Data.MySqlClient
 Imports Mysqlx.XDevAPI.Relational
+Imports Utils.Collections
 
 Public Class TablaBD
     Public Function InsertarUSU(ced As String, nom As String, dir As String, cel As String, usu As String, contra As String)
@@ -106,7 +107,10 @@ Public Class TablaBD
         cmd = New MySqlCommand("Select marca as 'Marca', modelo as 'Modelo', cantidad as 'Cantidad disponible', precio as 'Precio' from automovil ", con.getConexion())
         reader = cmd.ExecuteReader()
         Dim tabla = New DataTable()
+
         tabla.Load(reader)
+
+
         reader.Close()
         Return tabla
 

@@ -22,28 +22,30 @@ Partial Class AgregarCompra
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.imgAuto = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtCant = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnSigui = New System.Windows.Forms.Button()
+        Me.btnAnte = New System.Windows.Forms.Button()
+        Me.txtModelo = New System.Windows.Forms.TextBox()
+        Me.txtMarca = New System.Windows.Forms.TextBox()
+        CType(Me.imgAuto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'imgAuto
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(73, 244)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(288, 154)
-        Me.PictureBox1.TabIndex = 14
-        Me.PictureBox1.TabStop = False
+        Me.imgAuto.Location = New System.Drawing.Point(19, 244)
+        Me.imgAuto.Name = "imgAuto"
+        Me.imgAuto.Size = New System.Drawing.Size(373, 221)
+        Me.imgAuto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.imgAuto.TabIndex = 14
+        Me.imgAuto.TabStop = False
         '
         'Label1
         '
@@ -72,12 +74,13 @@ Partial Class AgregarCompra
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "Cantidad disponible"
         '
-        'TextBox3
+        'txtCant
         '
-        Me.TextBox3.Location = New System.Drawing.Point(132, 130)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(229, 20)
-        Me.TextBox3.TabIndex = 20
+        Me.txtCant.Location = New System.Drawing.Point(132, 130)
+        Me.txtCant.Name = "txtCant"
+        Me.txtCant.ReadOnly = True
+        Me.txtCant.Size = New System.Drawing.Size(229, 20)
+        Me.txtCant.TabIndex = 20
         '
         'Label4
         '
@@ -88,41 +91,17 @@ Partial Class AgregarCompra
         Me.Label4.TabIndex = 21
         Me.Label4.Text = "Precio"
         '
-        'TextBox4
+        'txtPrecio
         '
-        Me.TextBox4.Location = New System.Drawing.Point(132, 179)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(229, 20)
-        Me.TextBox4.TabIndex = 22
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(70, 228)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(42, 13)
-        Me.Label5.TabIndex = 23
-        Me.Label5.Text = "Imagen"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(132, 35)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(229, 21)
-        Me.ComboBox1.TabIndex = 24
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(132, 81)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(229, 21)
-        Me.ComboBox2.TabIndex = 25
+        Me.txtPrecio.Location = New System.Drawing.Point(132, 179)
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.ReadOnly = True
+        Me.txtPrecio.Size = New System.Drawing.Size(229, 20)
+        Me.txtPrecio.TabIndex = 22
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(74, 438)
+        Me.Button1.Location = New System.Drawing.Point(77, 521)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 34)
         Me.Button1.TabIndex = 26
@@ -131,48 +110,84 @@ Partial Class AgregarCompra
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(225, 438)
+        Me.Button2.Location = New System.Drawing.Point(228, 521)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 34)
         Me.Button2.TabIndex = 27
         Me.Button2.Text = "Ver mis compras"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'btnSigui
+        '
+        Me.btnSigui.Location = New System.Drawing.Point(276, 582)
+        Me.btnSigui.Name = "btnSigui"
+        Me.btnSigui.Size = New System.Drawing.Size(116, 34)
+        Me.btnSigui.TabIndex = 28
+        Me.btnSigui.Text = "Siguiente >>"
+        Me.btnSigui.UseVisualStyleBackColor = True
+        '
+        'btnAnte
+        '
+        Me.btnAnte.Location = New System.Drawing.Point(19, 582)
+        Me.btnAnte.Name = "btnAnte"
+        Me.btnAnte.Size = New System.Drawing.Size(116, 34)
+        Me.btnAnte.TabIndex = 29
+        Me.btnAnte.Text = "<< Anterior"
+        Me.btnAnte.UseVisualStyleBackColor = True
+        '
+        'txtModelo
+        '
+        Me.txtModelo.Location = New System.Drawing.Point(132, 77)
+        Me.txtModelo.Name = "txtModelo"
+        Me.txtModelo.ReadOnly = True
+        Me.txtModelo.Size = New System.Drawing.Size(229, 20)
+        Me.txtModelo.TabIndex = 30
+        '
+        'txtMarca
+        '
+        Me.txtMarca.Location = New System.Drawing.Point(132, 35)
+        Me.txtMarca.Name = "txtMarca"
+        Me.txtMarca.ReadOnly = True
+        Me.txtMarca.Size = New System.Drawing.Size(229, 20)
+        Me.txtMarca.TabIndex = 31
+        '
         'AgregarCompra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(414, 484)
+        Me.ClientSize = New System.Drawing.Size(414, 628)
+        Me.Controls.Add(Me.txtMarca)
+        Me.Controls.Add(Me.txtModelo)
+        Me.Controls.Add(Me.btnAnte)
+        Me.Controls.Add(Me.btnSigui)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtPrecio)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtCant)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.imgAuto)
         Me.Name = "AgregarCompra"
         Me.Text = "AgregarCompra"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgAuto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
+    Friend WithEvents imgAuto As Windows.Forms.PictureBox
     Friend WithEvents Label1 As Windows.Forms.Label
     Friend WithEvents Label2 As Windows.Forms.Label
     Friend WithEvents Label3 As Windows.Forms.Label
-    Friend WithEvents TextBox3 As Windows.Forms.TextBox
+    Friend WithEvents txtCant As Windows.Forms.TextBox
     Friend WithEvents Label4 As Windows.Forms.Label
-    Friend WithEvents TextBox4 As Windows.Forms.TextBox
-    Friend WithEvents Label5 As Windows.Forms.Label
-    Friend WithEvents ComboBox1 As Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As Windows.Forms.ComboBox
+    Friend WithEvents txtPrecio As Windows.Forms.TextBox
     Friend WithEvents Button1 As Windows.Forms.Button
     Friend WithEvents Button2 As Windows.Forms.Button
+    Friend WithEvents btnSigui As Windows.Forms.Button
+    Friend WithEvents btnAnte As Windows.Forms.Button
+    Friend WithEvents txtModelo As Windows.Forms.TextBox
+    Friend WithEvents txtMarca As Windows.Forms.TextBox
 End Class

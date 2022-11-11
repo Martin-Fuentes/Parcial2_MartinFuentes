@@ -119,6 +119,10 @@
       <Project>{8d748bde-9d46-41dd-ada7-35081caf5efd}</Project>
       <Name>Conexion</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TablaBD_USER\TablaBD_USER.vbproj">
+      <Project>{a636c5b3-cca2-4c54-b8b3-1164e5566615}</Project>
+      <Name>TablaBD_USER</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TablaDB\TablaDB.vbproj">
       <Project>{a527cabc-8d6b-4999-905c-835c76a734c3}</Project>
       <Name>TablaDB</Name>
