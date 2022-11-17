@@ -12,7 +12,7 @@ Imports System.Text
 Imports System.Threading.Tasks
 Imports TablaDB
 Public Class AgregarAuto
-    Public Sub New()
+    Public Sub New(Usuario As String)
 
         ' Esta llamada es exigida por el diseñador.
         InitializeComponent()

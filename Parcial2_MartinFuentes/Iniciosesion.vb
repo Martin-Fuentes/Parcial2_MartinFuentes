@@ -13,11 +13,11 @@ Public Class Iniciosesion
         Select Case rolUsuario
             Case 1
                 Me.Hide()
-                Dim frm As New AgregarCompra()
+                Dim frm As New AgregarCompra(txtUsu.Text)
                 frm.Show()
             Case 2
                 Me.Hide()
-                Dim frm As New AgregarAuto()
+                Dim frm As New AgregarAuto(txtUsu.Text)
                 frm.Show()
         End Select
     End Sub

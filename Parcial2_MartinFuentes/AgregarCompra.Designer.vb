@@ -29,12 +29,15 @@ Partial Class AgregarCompra
         Me.txtCant = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnAgregar = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnSigui = New System.Windows.Forms.Button()
         Me.btnAnte = New System.Windows.Forms.Button()
         Me.txtModelo = New System.Windows.Forms.TextBox()
         Me.txtMarca = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblTot = New System.Windows.Forms.Label()
+        Me.lblCant = New System.Windows.Forms.Label()
         CType(Me.imgAuto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -99,27 +102,27 @@ Partial Class AgregarCompra
         Me.txtPrecio.Size = New System.Drawing.Size(229, 20)
         Me.txtPrecio.TabIndex = 22
         '
-        'Button1
+        'btnAgregar
         '
-        Me.Button1.Location = New System.Drawing.Point(77, 521)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(116, 34)
-        Me.Button1.TabIndex = 26
-        Me.Button1.Text = "Agregar a mi compra"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAgregar.Location = New System.Drawing.Point(424, 283)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(116, 34)
+        Me.btnAgregar.TabIndex = 26
+        Me.btnAgregar.Text = "Agregar a mi compra"
+        Me.btnAgregar.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(228, 521)
+        Me.Button2.Location = New System.Drawing.Point(424, 386)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 34)
         Me.Button2.TabIndex = 27
-        Me.Button2.Text = "Ver mis compras"
+        Me.Button2.Text = "Comprar todo"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'btnSigui
         '
-        Me.btnSigui.Location = New System.Drawing.Point(276, 582)
+        Me.btnSigui.Location = New System.Drawing.Point(341, 582)
         Me.btnSigui.Name = "btnSigui"
         Me.btnSigui.Size = New System.Drawing.Size(116, 34)
         Me.btnSigui.TabIndex = 28
@@ -128,7 +131,7 @@ Partial Class AgregarCompra
         '
         'btnAnte
         '
-        Me.btnAnte.Location = New System.Drawing.Point(19, 582)
+        Me.btnAnte.Location = New System.Drawing.Point(73, 582)
         Me.btnAnte.Name = "btnAnte"
         Me.btnAnte.Size = New System.Drawing.Size(116, 34)
         Me.btnAnte.TabIndex = 29
@@ -151,17 +154,45 @@ Partial Class AgregarCompra
         Me.txtMarca.Size = New System.Drawing.Size(229, 20)
         Me.txtMarca.TabIndex = 31
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(258, 511)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.TabIndex = 32
+        Me.Label5.Text = "Precio"
+        '
+        'lblTot
+        '
+        Me.lblTot.AutoSize = True
+        Me.lblTot.Location = New System.Drawing.Point(394, 94)
+        Me.lblTot.Name = "lblTot"
+        Me.lblTot.Size = New System.Drawing.Size(0, 13)
+        Me.lblTot.TabIndex = 33
+        '
+        'lblCant
+        '
+        Me.lblCant.AutoSize = True
+        Me.lblCant.Location = New System.Drawing.Point(394, 130)
+        Me.lblCant.Name = "lblCant"
+        Me.lblCant.Size = New System.Drawing.Size(0, 13)
+        Me.lblCant.TabIndex = 34
+        '
         'AgregarCompra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(414, 628)
+        Me.ClientSize = New System.Drawing.Size(552, 628)
+        Me.Controls.Add(Me.lblCant)
+        Me.Controls.Add(Me.lblTot)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtMarca)
         Me.Controls.Add(Me.txtModelo)
         Me.Controls.Add(Me.btnAnte)
         Me.Controls.Add(Me.btnSigui)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.txtPrecio)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtCant)
@@ -184,10 +215,13 @@ Partial Class AgregarCompra
     Friend WithEvents txtCant As Windows.Forms.TextBox
     Friend WithEvents Label4 As Windows.Forms.Label
     Friend WithEvents txtPrecio As Windows.Forms.TextBox
-    Friend WithEvents Button1 As Windows.Forms.Button
+    Friend WithEvents btnAgregar As Windows.Forms.Button
     Friend WithEvents Button2 As Windows.Forms.Button
     Friend WithEvents btnSigui As Windows.Forms.Button
     Friend WithEvents btnAnte As Windows.Forms.Button
     Friend WithEvents txtModelo As Windows.Forms.TextBox
     Friend WithEvents txtMarca As Windows.Forms.TextBox
+    Friend WithEvents Label5 As Windows.Forms.Label
+    Friend WithEvents lblTot As Windows.Forms.Label
+    Friend WithEvents lblCant As Windows.Forms.Label
 End Class
