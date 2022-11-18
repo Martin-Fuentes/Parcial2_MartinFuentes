@@ -30,12 +30,10 @@ Partial Class AgregarCompra
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.btnSigui = New System.Windows.Forms.Button()
         Me.btnAnte = New System.Windows.Forms.Button()
         Me.txtModelo = New System.Windows.Forms.TextBox()
         Me.txtMarca = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.lblTot = New System.Windows.Forms.Label()
         Me.lblCant = New System.Windows.Forms.Label()
         CType(Me.imgAuto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -111,15 +109,6 @@ Partial Class AgregarCompra
         Me.btnAgregar.Text = "Agregar a mi compra"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(424, 386)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(116, 34)
-        Me.Button2.TabIndex = 27
-        Me.Button2.Text = "Comprar todo"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'btnSigui
         '
         Me.btnSigui.Location = New System.Drawing.Point(341, 582)
@@ -154,15 +143,6 @@ Partial Class AgregarCompra
         Me.txtMarca.Size = New System.Drawing.Size(229, 20)
         Me.txtMarca.TabIndex = 31
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(258, 511)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 13)
-        Me.Label5.TabIndex = 32
-        Me.Label5.Text = "Precio"
-        '
         'lblTot
         '
         Me.lblTot.AutoSize = True
@@ -186,12 +166,10 @@ Partial Class AgregarCompra
         Me.ClientSize = New System.Drawing.Size(552, 628)
         Me.Controls.Add(Me.lblCant)
         Me.Controls.Add(Me.lblTot)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtMarca)
         Me.Controls.Add(Me.txtModelo)
         Me.Controls.Add(Me.btnAnte)
         Me.Controls.Add(Me.btnSigui)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.txtPrecio)
         Me.Controls.Add(Me.Label4)
@@ -216,12 +194,10 @@ Partial Class AgregarCompra
     Friend WithEvents Label4 As Windows.Forms.Label
     Friend WithEvents txtPrecio As Windows.Forms.TextBox
     Friend WithEvents btnAgregar As Windows.Forms.Button
-    Friend WithEvents Button2 As Windows.Forms.Button
     Friend WithEvents btnSigui As Windows.Forms.Button
     Friend WithEvents btnAnte As Windows.Forms.Button
     Friend WithEvents txtModelo As Windows.Forms.TextBox
     Friend WithEvents txtMarca As Windows.Forms.TextBox
-    Friend WithEvents Label5 As Windows.Forms.Label
     Friend WithEvents lblTot As Windows.Forms.Label
     Friend WithEvents lblCant As Windows.Forms.Label
 End Class
